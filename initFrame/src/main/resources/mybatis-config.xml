@@ -16,9 +16,9 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <package name="com.midtics.hopeland.domain"/>
+        <package name="com.hopeland.domain"/>
     </typeAliases>
     <mappers>
-        <!-- mapper resource="mybatis/mapper/raw_log.xml"/-->
+        <mapper resource="mybatis/mapper/test.xml"/>
     </mappers>
 </configuration>
