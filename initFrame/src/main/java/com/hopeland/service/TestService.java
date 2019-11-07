@@ -19,4 +19,9 @@ public class TestService
 		return mapper.selectAll();
 	}
 	
+	public int insert(Test test)
+	{
+		return mapper.insert(test);
+	}
+	
 }

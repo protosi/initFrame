@@ -6,7 +6,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.hopeland.service.TestService;
@@ -25,5 +24,16 @@ public class TestServiceTest
 		
 		System.out.println(list.size());
 		
+	}
+	
+	@Test
+	public void insert()
+	{
+		com.hopeland.domain.Test test = new com.hopeland.domain.Test();
+		test.setTest_name("insert test");
+		test.setReg_admin("admin");
+		test.setReg_date("2019-11-07 00:00:01");
+		test.setIs_active(1);
+		testService.insert(test);
 	}
 }

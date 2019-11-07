@@ -10,4 +10,6 @@ import com.hopeland.domain.Test;
 public interface TestMapper 
 {
 	public List<Test> selectAll();
+	
+	public int insert(Test test);
 }
