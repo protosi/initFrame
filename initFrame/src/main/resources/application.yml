@@ -1,0 +1,26 @@
+server:
+  context-path: /initFrame
+  servlet:
+    context-path: /initFrame
+  port: 80
+  
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+ 
+  datasource:
+    username: root
+    password: 9233
+    url: jdbc:mysql://localhost:3306/      
+#      
+# Mybatis Configuration
+# http://www.mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/
+# https://github.com/mybatis/spring-boot-starter/blob/master/mybatis-spring-boot-samples/mybatis-spring-boot-sample-xml/src/main/resources/application.properties
+# 
+
+mybatis:
+  config-location: classpath:mybatis-config.xml
+
+  
